@@ -71,7 +71,7 @@ run_tests() {
     test_get_centos_img
     test_centos_img_installed
     test_centos_img_runcmd
-    test_centos_img_hostname_match_cont_id
+    #test_centos_img_hostname_match_cont_id
 }
 
 # Main
