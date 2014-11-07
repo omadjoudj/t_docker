@@ -25,5 +25,12 @@ fi
 
 
 t_Log "Setting up docker "
-t_InstallPackage docker-io
+
+if [ "$centos_ver" = "6"  ] ; then
+    t_InstallPackage docker-io
+else
+    t_InstallPackage docker
+fi
+
+
 t_ServiceControl docker start
