@@ -19,7 +19,7 @@ if [ "$centos_ver" = "6" ] ; then
 	yum -y localinstall /root/epel-release*.rpm
 
 else
-	echo "CentOS 7"
+	t_Log "CentOS 7: Docker is included in Extra repo"
 
 fi
 
